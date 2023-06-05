@@ -2,8 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { mxGraph } from 'mxgraph';
 
 declare const require: any;
-const mxgraph = require('mxgraph')({
+const mxgraphFactory = require('mxgraph')({
+  mxImageBasePath: 'assets/mxgraph/images',
   mxBasePath: 'assets/mxgraph',
+});
+const mxgraph = mxgraphFactory({
+  mxLoadResources: false,
+  mxLoadStylesheets: false,
 });
 
 @Component({
@@ -21,7 +26,7 @@ export class XmlParserComponent implements OnInit {
 
   parseXml(): void {
     const container = document.getElementById('graphContainer');
-    const graph = new mxGraph(container);
+    const graph = new mxgraph.mxGraph(container);
 
     // Your XML parsing logic goes here
     // ...
