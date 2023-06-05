@@ -4,11 +4,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { XmlParserComponent } from './xml-parser/xml-parser.component';
 import { FormsModule } from '@angular/forms';
-
 @NgModule({
   declarations: [
     AppComponent,
-    XmlParserComponent
+    XmlParserComponent,
   ],
   imports: [
     BrowserModule,
