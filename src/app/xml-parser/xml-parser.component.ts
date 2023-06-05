@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { mxGraph } from 'mxgraph';
+import { mxgraph } from 'mxgraph';
 
 declare const require: any;
-const mxgraphFactory = require('mxgraph')({
-  mxImageBasePath: 'assets/mxgraph/images',
+// Importing mxgraph for initialization purposes
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const mx = require('mxgraph')({
   mxBasePath: 'assets/mxgraph',
-});
-const mxgraph = mxgraphFactory({
-  mxLoadResources: false,
-  mxLoadStylesheets: false,
 });
 
 @Component({

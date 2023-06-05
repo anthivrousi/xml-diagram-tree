@@ -21,6 +21,7 @@
     "fast-xml-parser": "^4.2.3",
     "mxgraph": "^4.2.2",
     "rxjs": "~7.5.0",
+    "timers": "^0.1.1",
     "timers-browserify": "^2.0.12",
     "tslib": "^2.3.0",
     "xml-js": "^1.6.11",
