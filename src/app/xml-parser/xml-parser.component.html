@@ -1,2 +1,5 @@
-<input [(ngModel)]="xmlContent" placeholder="Enter XML content" />
-<button (click)="parseXml(xmlContent)">Parse XML</button>
+<div>
+    <input [(ngModel)]="xmlContent" placeholder="Enter XML content" />
+    <button (click)="parseXml()">Parse XML</button>
+  </div>
+  <div id="diagramContainer" style="width: 100%; height: 500px;"></div>

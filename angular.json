@@ -98,7 +98,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/mxgraph/javascript/dist/mxClient.js",
+              "node_modules/mxgraph/javascript/dist/mxGraph.js"
+            ]
           }
         }
       }
